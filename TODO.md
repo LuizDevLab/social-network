@@ -1,0 +1,4 @@
+- Integrar com tortoise ORM
+- Criar model de usuario
+- rota de usuário
+- rota de login
