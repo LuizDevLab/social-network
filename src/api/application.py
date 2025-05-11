@@ -1,7 +1,7 @@
 import os
 from fastapi import FastAPI
 from dotenv import load_dotenv
-from src.datalayer.db_config import configure_db
+from src.api.configuration import configure_db, configure_routes
 
 load_dotenv()
 
@@ -10,11 +10,9 @@ def create_app():
 
   #inicializar db
   configure_db(app)
+  configure_routes(app)
 
   return app 
 
 app = create_app()
 
-@app.get('/')
-async def home():
-  return {'status': 'ok'}
