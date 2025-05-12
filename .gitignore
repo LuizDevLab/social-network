@@ -2,3 +2,4 @@ venv/
 .env
 __pycache__
 dev.sh
+db.sqlite3
